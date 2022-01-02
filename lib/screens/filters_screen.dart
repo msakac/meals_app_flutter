@@ -21,9 +21,9 @@ class _FiltersScreenState extends State<FiltersScreen> {
   @override
   initState(){
     _glutenFree = widget.filters['gluten'];
-    _vegetarian = widget.filters['lactose'];
-    _vegan = widget.filters['vegetarian'];
-    _lactoseFree = widget.filters['vegan'];
+    _vegetarian = widget.filters['vegetarian'];
+    _vegan = widget.filters['vegan'];
+    _lactoseFree = widget.filters['lactose'];
     super.initState();
   }
 
@@ -51,6 +51,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
                     'vegan': _vegan,
                   };
                   widget.saveFilters(selectedFilters);
+                  Navigator.of(context).pushReplacementNamed('/');
                 },
                 icon: Icon(Icons.save))
           ],
