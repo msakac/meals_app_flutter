@@ -13,7 +13,7 @@ class MyApp extends StatefulWidget {
   @override
   State<MyApp> createState() => _MyAppState();
 }
-
+//komentar
 class _MyAppState extends State<MyApp> {
   Map<String, bool> _filters = {
     'gluten': false,
